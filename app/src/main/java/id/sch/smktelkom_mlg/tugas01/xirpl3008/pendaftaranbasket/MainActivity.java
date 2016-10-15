@@ -43,10 +43,7 @@ public class MainActivity extends AppCompatActivity {
             String sekolah = etSekolah.getText().toString();
             int nomor = Integer.parseInt(etNomor.getText().toString());
             String alamat = etAlamat.getText().toString();
-            tvHasil.setText("\n Nama    : " + nama +
-                    "\n Sekolah    : " + sekolah +
-                    "\n No.Telp     : " + nomor +
-                    "\n Alamat      : " + alamat);
+            tvHasil.setText("\n Nama        : " + nama + "\n Sekolah    : " + sekolah + "\n No.Telp     : " + nomor + "\n Alamat      : " + alamat);
         }
     }
 
