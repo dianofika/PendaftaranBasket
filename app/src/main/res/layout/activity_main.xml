@@ -72,7 +72,7 @@
             android:id="@+id/editTextNo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberSigned" />
+            android:inputType="number|phone" />
 
         <TextView
             android:id="@+id/textView5"
@@ -93,6 +93,7 @@
             android:text="Jenis Kelamin" />
 
         <RadioGroup
+            android:id="@+id/RadioGroupStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -102,14 +103,14 @@
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/radioButtonPerempuan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Perempuan" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/radioButtonLaki"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
@@ -124,25 +125,32 @@
             android:text="Prestasi" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkBoxPopda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="POPDA" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/checkBoxO2sn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="O2SN" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/checkBoxKobalajar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="KOBALAJAR" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Tidak Ada" />
 
         <TextView
             android:id="@+id/textView8"
@@ -153,7 +161,8 @@
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:entries="@array/yuhuu" />
 
         <Button
             android:id="@+id/button"
