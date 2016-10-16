@@ -74,9 +74,9 @@ public class MainActivity extends AppCompatActivity {
         if (pres.length() == startlen) pres += "Anda belum memilih";
 
         if (rgStatus.getCheckedRadioButtonId() != -1) {
-            RadioButton rb = (RadioButton)
+            RadioButton asd = (RadioButton)
                     findViewById(rgStatus.getCheckedRadioButtonId());
-            hasil = rb.getText().toString();
+            hasil = asd.getText().toString();
         }
 
         if (nama.isEmpty()) {
@@ -105,6 +105,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         tvHasil.setText("-----DATA TERKIRIM-----" + "\nNama       : " + nama + "\n Sekolah     : " + sekolah
-                + "\n No.Telp     : " + nomor + "\nAlamat     : " + alamat + pres + "\n Posisi    : " + sp.getSelectedItem().toString());
+                + "\n No.Telp     : " + nomor + "\nAlamat     : " + alamat + hasil + pres + "\n Posisi    : " + sp.getSelectedItem().toString());
     }
 }
