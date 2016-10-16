@@ -62,9 +62,9 @@ public class MainActivity extends AppCompatActivity {
             String sekolah = etSekolah.getText().toString();
             int nomor = Integer.parseInt(etNomor.getText().toString());
             String alamat = etAlamat.getText().toString();
-        String hasil = "\n Jenis Kelamin    : ";
+        String hasil = "\n";
         String posisi = sp.getSelectedItem().toString();
-        String pres = "\n Prestasi      : ";
+        String pres = "\n";
 
         int startlen = pres.length();
         if (popda.isChecked()) pres += popda.getText() + ",";
@@ -105,6 +105,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         tvHasil.setText("-----DATA TERKIRIM-----" + "\nNama       : " + nama + "\n Sekolah     : " + sekolah
-                + "\n No.Telp     : " + nomor + "\nAlamat     : " + alamat + hasil + "\n Prestasi   : " + pres + "\n Posisi    : " + sp.getSelectedItem().toString());
+                + "\n No.Telp     : " + nomor + "\nAlamat     : " + alamat + pres + "\n Posisi    : " + sp.getSelectedItem().toString());
     }
 }
