@@ -105,6 +105,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         tvHasil.setText("-----DATA TERKIRIM-----" + "\nNama       : " + nama + "\n Sekolah     : " + sekolah
-                + "\n No.Telp     : " + nomor + "\nAlamat     : " + alamat + "\nJenis Kelamin : " + hasil + "\n Prestasi   : " + pres + "\n Posisi    : " + sp.getSelectedItem().toString());
+                + "\n No.Telp     : " + nomor + "\nAlamat     : " + alamat + hasil + "\n Prestasi   : " + pres + "\n Posisi    : " + sp.getSelectedItem().toString());
     }
 }
